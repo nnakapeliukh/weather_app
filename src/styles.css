@@ -1,0 +1,124 @@
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 99vh;
+  height: 100vh;
+  margin: 0;
+  /* position: relative; */
+}
+
+.display-div {
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  min-width: 500px;
+  min-height: 200px;
+  background-color: rgba(0, 0, 0, 0.404);
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.display-text {
+  color: white;
+  margin: 0;
+}
+
+#main-temp {
+  display: inline-block;
+  position: absolute;
+  width: 150px;
+  right: 5%;
+  top: 35%;
+}
+#main-temp h1 {
+  font-size: 2.5em;
+}
+.display-div h2 {
+  margin: 30px;
+}
+.display-div h3 {
+  margin: 20px;
+}
+
+#weather-icon {
+  display: inline-block;
+  position: absolute;
+  top: 3em;
+  left: 75px;
+  margin: auto;
+}
+
+#searchbox-div {
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  border-radius: 30px;
+
+  background-color: rgba(0, 0, 0, 0.404);
+}
+#searchbox-div input {
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 40px;
+  color: white;
+  padding-left: 30px;
+}
+
+#searchbox-div button {
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 40px;
+  color: white;
+  padding: 10px;
+}
+
+#searchbox-div button:hover {
+  background-color: rgba(0, 0, 0, 0.404);
+}
+
+.apply-colorchange {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: colorchange;
+  animation-duration: 1s;
+}
+
+.button-error {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: error;
+  animation-duration: 2s;
+}
+
+@keyframes colorchange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.404);
+  }
+  33% {
+    background-color: rgb(0, 0, 0);
+    /* transform: scale(1.6); */
+  }
+  66% {
+    background-color: rgba(0, 0, 0, 0);
+
+    transform: scale(1.6);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.404);
+  }
+}
+@keyframes error {
+  0% {
+    background-color: rgba(167, 10, 10, 0.431);
+  }
+  50% {
+    background-color: rgba(167, 10, 10, 0.726);
+  }
+  100% {
+    background-color: rgba(167, 10, 10, 0.431);
+  }
+}
