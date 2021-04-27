@@ -4,7 +4,6 @@ body {
   background-size: cover;
   height: 100vh;
   margin: 0;
-  /* position: relative; */
 }
 
 .display-div {
@@ -99,7 +98,6 @@ body {
   }
   33% {
     background-color: rgb(0, 0, 0);
-    /* transform: scale(1.6); */
   }
   66% {
     background-color: rgba(0, 0, 0, 0);
