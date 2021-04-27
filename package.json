@@ -11,7 +11,7 @@
     "clean-webpack-plugin": "^3.0.0"
   },
   "scripts": {
-    "heroku-postbuild": "webpack --config webpack.prod.js",
+    
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open"
   },
