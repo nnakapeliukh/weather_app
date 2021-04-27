@@ -4,6 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
+    "heroku-postbuild": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open"
   },
